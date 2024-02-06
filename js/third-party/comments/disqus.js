@@ -21,7 +21,7 @@ document.addEventListener('page:loaded', () => {
       this.page.identifier = CONFIG.page.path;
       this.page.title = CONFIG.page.title;
       if (CONFIG.disqus.i18n.disqus !== 'disqus') {
-        this.language = CONFIG.disqus.i18n.disqus;
+        this.language = "zh_TW";//CONFIG.disqus.i18n.disqus;
       }
     };
     NexT.utils.loadComments('#disqus_thread').then(() => {
